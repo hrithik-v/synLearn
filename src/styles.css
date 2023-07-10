@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+}
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+::-webkit-scrollbar {
+  appearance: none;
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: green;
+  border-radius: 10px;
+}
+
+/* --------------------Header-------------- */
+nav {
+  border-bottom: 5px solid green;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(5px);
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 100;
+}
+nav img {
+  width: 50px;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+}
+.nav_links a {
+  color: darkgreen;
+  text-decoration: none;
+}
+.nav_links h5 {
+  font-size: 17px;
+  margin: 0;
+}
+.nav_links a:hover {
+  text-decoration: overline;
+}
+
+.nav_btns > button,
+.box button {
+  font-weight: 700;
+  background-color: green;
+  color: white;
+  padding: 8px 15px;
+  border: 0;
+  font-size: 17px;
+}
+.nav_btns > button:hover,
+.box button:hover {
+  background-color: rgb(4, 182, 4);
+  cursor: pointer;
+}
+
+/* ---------------------------------------- */
+/* -----------------------Carousel------------- */
+.carousel {
+  /* border: 1px solid red; */
+  /* background-color: #85ffce; */
+  /* background-image: url("https://www.transparenttextures.com/patterns/always-grey.png"); */
+  background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+@keyframes smoothEnter {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel > div {
+  animation-name: smoothEnter;
+  animation-duration: 1s;
+  justify-content: space-between;
+  padding: 166px 70px 90px 70px;
+}
+
+.carousel img {
+  /* width: 25%; */
+  height: 230px;
+}
+.carousel h4 {
+  font-size: 60px;
+}
+/* -------------------------------------------- */
+
+/* --------------------Testimonials------------ */
+.tm {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 0 8%;
+}
+.tm > div {
+  /* border: 2px dashed black; */
+  box-shadow: 10px 10px 16px 0px grey;
+  padding: 20px;
+  width: 25%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tm > div > p:nth-child(2) {
+  font-weight: 700;
+}
+.tm > div > p:nth-child(3) {
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.tm > div > img {
+  width: 150px;
+  border-radius: 50%;
+}
+/* -------------------------------------------- */
+/* ------------------- Footer --------------- */
+
+footer {
+  background-color: #00af4e;
+  padding: 30px 50px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+/*  */
+footer a {
+  color: black;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------- */
+
+/* ------------------Pricing------------------- */
+.pricing {
+  margin-bottom: 80px;
+}
+
+table {
+  width: 50%;
+}
+table,
+td,
+th {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 7px 10px;
+  text-align: center;
+  color: white;
+}
+th {
+  background-color: #1d7e74ff;
+}
+td:nth-child(1) {
+  font-weight: bold;
+  background-color: #1d7e74ff;
+}
+tr:nth-child(1) {
+  background-color: #f1c232ff;
+}
+tr:nth-child(n + 2) td:nth-child(n + 2) {
+  background-color: #249c90ff;
+}
+/* -------------------------------------------- */
+/* ---------------------Overlay---------------- */
+.overlay {
+  position: fixed;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  height: 240px;
+}
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signin input {
+  border: 0;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 7px;
+  padding: 7px;
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* -------------------------------------------- */
